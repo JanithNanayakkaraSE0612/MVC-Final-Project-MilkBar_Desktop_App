@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="pane" prefHeight="575.0" prefWidth="830.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="lk.ijse.MilkBar.Controller.PaymentFormController">
+   <children>
+      <ImageView fitHeight="64.0" fitWidth="69.0" layoutX="25.0" layoutY="25.0" onMouseClicked="#btnBackOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/icons8-go-back-80.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="122.0" fitWidth="182.0" layoutX="205.0" layoutY="180.0" onMouseClicked="#CustomerClickedOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/icons8-payment-53.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fitHeight="122.0" fitWidth="122.0" layoutX="487.0" layoutY="180.0" onMouseClicked="#SupplierPaymentClickedOnAction" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../assests/icons8-payment-58.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </ImageView>
+      <Label layoutX="159.0" layoutY="325.0" text="Customer Payment">
+         <font>
+            <Font name="Britannic Bold" size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="455.0" layoutY="325.0" text="Supplier Payment">
+         <font>
+            <Font name="Britannic Bold" size="24.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
