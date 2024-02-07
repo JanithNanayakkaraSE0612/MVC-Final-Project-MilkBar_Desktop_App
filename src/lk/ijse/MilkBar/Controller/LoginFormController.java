@@ -31,6 +31,7 @@ public class LoginFormController {
 
         String sql = "SELECT * FROM users WHERE username = ? and user_password = ? ";
         ResultSet result = CrudUtil.execute(sql, userName, password);
+        System.out.println(result);
 
         if (!result.next()) {
 
